@@ -31,7 +31,7 @@
   overflow: hidden;
 }
 
-.portfolio, .clients, .team, .activity, .advantages, .lead {
+.portfolio, .clients, .team, .activity, .lead {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -63,7 +63,7 @@ body.no-scroll {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -86,11 +86,26 @@ p {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -163,7 +178,6 @@ p {
 }
 
 .title {
-  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -209,15 +223,6 @@ p {
 }
 .modal-form__close-btn {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -553,17 +558,25 @@ p {
   background: #188CE8;
 }
 
-.advantages-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.advantages {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.advantages-list .advantages-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 94px;
+    padding-bottom: 194px;
+  }
 }
 
-.advantages-item {
-  width: 270px;
+.advantages-list .advantages-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .advantages-icon-box {
