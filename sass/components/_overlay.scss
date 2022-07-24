@@ -1,0 +1,27 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    padding: 63px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    transition: transform var(--anim-fast);
+
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.55;
+        letter-spacing: 0.03em;
+        color: var(--title-text-color);
+    }
+}
+
+.projects-item__link:hover .overlay,
+.projects-item__link:focus .overlay {
+    transform: translateY(0);
+}

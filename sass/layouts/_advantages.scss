@@ -1,0 +1,39 @@
+.advantages {
+    @extend %section;
+}
+
+.advantages-list {
+    display: flex;
+
+    & .advantages-item:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+
+
+.advantages-item {
+    width: 270px;
+}
+
+.advantages-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 120px;
+    background: var(--secondary-bg-color);
+    border-radius: 4px;
+}
+
+.advantages-subtitle {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.advantages-desc {
+    line-height: 1.71;
+    color: var(--secondary-text-color)
+}

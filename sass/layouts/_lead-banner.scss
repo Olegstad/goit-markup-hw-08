@@ -1,0 +1,45 @@
+.lead {
+    @extend %section;
+    padding: 200px 0;
+    background-color: var(--title-bg-color);
+}
+
+.container-lead {
+    text-align: center;
+}
+
+.cover {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/Background/Background-lead.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.lead-slogan {
+    width: 696px;
+    margin: 0 auto 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--title-text-color)
+}
+
+.lead-btn {
+    padding: 10px 32px;
+    transition: background var(--anim-fast);
+
+    &:hover,
+    &:focus {
+        background: #188CE8;
+    }
+}
