@@ -3,10 +3,10 @@
     border: 1px solid #ECECEC;
 }
 
-// .container-header {
-//     display: flex;
-//     align-items: center;
-// }
+.container-header {
+    display: flex;
+    align-items: center;
+}
 
 // .header-nav {
 //     display: flex;
@@ -30,6 +30,7 @@
     }
 
     @media screen and (min-width: 1200px) {
+        margin: 24px auto 25px 0px;
         font-size: 26px;
         line-height: 1.19;
     }    

@@ -234,6 +234,15 @@ p {
 }
 .modal-form__close-btn {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -417,9 +426,43 @@ p {
           transform: translateY(0);
 }
 
+.mobile-menu-btn {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
+.mobile-menu-close {
+  opacity: 0;
+}
+
 .header {
   background-color: var(--main-bg-color);
   border: 1px solid #ECECEC;
+}
+
+.container-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo {
@@ -440,6 +483,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .logo {
+    margin: 24px auto 25px 0px;
     font-size: 26px;
     line-height: 1.19;
   }
