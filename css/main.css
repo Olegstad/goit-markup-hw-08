@@ -104,7 +104,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -571,13 +571,10 @@ p {
 @media screen and (min-width: 1200px) {
   .advantages {
     padding-top: 94px;
-    padding-bottom: 194px;
+    padding-bottom: 94px;
   }
 }
 
-.advantages-list {
-  max-width: 450px;
-}
 @media screen and (min-width: 768px) {
   .advantages-list {
     display: -webkit-box;
@@ -585,18 +582,43 @@ p {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
-.advantages-item {
-  margin-bottom: 30px;
-}
-.advantages-item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .advantages-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .advantages-item {
     width: 354px;
+  }
+  .advantages-item:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-item {
+    width: 270px;
+  }
+  .advantages-item:nth-child(-n+4) {
+    margin-bottom: 0;
+  }
+  .advantages-item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
