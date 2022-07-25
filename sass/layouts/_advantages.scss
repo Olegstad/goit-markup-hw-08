@@ -13,21 +13,32 @@
     }
 }
 
-
-
 .advantages-list {
-    // display: flex;
+    max-width: 450px;
 
-    & .advantages-item:not(:last-child) {
-        margin-right: 30px;
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    // @media screen and (min-width:1200px) {
+    //     display: flex;
+    // }
+
+}
+
+.advantages-item {
+    margin-bottom: 30px;
+    
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 354px;
     }
 }
 
-
-
-// .advantages-item {
-//     width: 270px;
-// }
 
 .advantages-icon-box {
     display: flex;

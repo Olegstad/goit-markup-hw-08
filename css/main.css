@@ -575,8 +575,29 @@ p {
   }
 }
 
-.advantages-list .advantages-item:not(:last-child) {
-  margin-right: 30px;
+.advantages-list {
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.advantages-item {
+  margin-bottom: 30px;
+}
+.advantages-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .advantages-item {
+    width: 354px;
+  }
 }
 
 .advantages-icon-box {
