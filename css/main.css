@@ -528,8 +528,13 @@ p {
 }
 
 .lead {
-  padding: 200px 0;
+  padding: 118px 0;
   background-color: var(--title-bg-color);
+}
+@media screen and (min-width: 1200px) {
+  .lead {
+    padding: 200px 0;
+  }
 }
 
 .container-lead {
@@ -537,8 +542,7 @@ p {
 }
 
 .cover {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Background/Background-lead.jpg);
@@ -547,17 +551,40 @@ p {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .cover {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cover {
+    max-width: 1600px;
+  }
+}
 
 .lead-slogan {
-  width: 696px;
   margin: 0 auto 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 768px) {
+  .lead-slogan {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .lead-slogan {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 
 .lead-btn {
