@@ -1,17 +1,35 @@
 .team {
-    @extend %section;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
     background-color: var(--secondary-bg-color);
 }
 
-.container-team {
-    text-align: center;
-}
+// .container-team {
+//     text-align: center;
+// }
 
 .team-list {
-    display: flex;
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
-    & .team-card:not(:last-child) {
-        margin-right: 30px;
+   @media screen and (min-width: 1200px) {
+       display: flex;
+       flex-wrap: nowrap;
     }
 }
 
@@ -21,6 +39,29 @@
     background-color: var(--main-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        &:nth-child(-n + 2) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        &:nth-child(-n + 4) {
+            margin-bottom: 0;
+        }        
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
 
     &__tank {
         padding-top: 30px;

@@ -1,7 +1,13 @@
 .title {
-    // margin-bottom: 50px;
-    @include fonts(700, 36px, 1.17, 0.03em);
-    color: var(--main-text-color)
+    margin-bottom: 30px;
+    text-align: center;
+    @include fonts(700, 28px, 1.18, 0.03em);
+    color: var(--main-text-color);
+
+    @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+            @include fonts(700, 36px, 1.17, 0.03em);
+        }
 }
 
  // font-weight: 700;
