@@ -834,10 +834,23 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
 }
 
-.clients-item:not(:last-child) {
-  margin-right: 30px;
+.clients-item {
+  width: 210px;
+}
+@media screen and (min-width: 768px) {
+  .clients-item {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    width: 170px;
+  }
 }
 
 .clients-item__icon {
@@ -856,7 +869,6 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
   height: 92px;
   border: 1px solid var(--social-icon-text);
   border-radius: 4px;
