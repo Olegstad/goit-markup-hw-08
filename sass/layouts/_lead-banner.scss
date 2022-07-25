@@ -13,7 +13,6 @@
 }
 
 .cover {
-    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right,
@@ -23,10 +22,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
-    }
     
     @media screen and (min-width: 1200px) {
         max-width: 1600px;
