@@ -222,17 +222,19 @@ p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
+  width: 450px;
+  height: 609px;
   background-color: var(--main-bg-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-
-.modal-form {
-  padding: 40px;
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
-.modal-form__close-btn {
+.modal__close-btn {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,14 +254,30 @@ p {
   background-color: var(--main-bg-color);
   cursor: pointer;
 }
+
+.modal-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+}
 .modal-form__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__title {
+    line-height: 1.15;
+  }
 }
 .modal-form__input-area {
   margin-bottom: 20px;
@@ -319,7 +337,10 @@ p {
   transition: var(--anim-fast);
 }
 .modal-form__btn {
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 55px;
+  width: 200px;
   color: var(--title-text-color);
   background-color: var(--accent-bg-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -373,14 +394,20 @@ p {
 }
 .checkbox-label__text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-label__text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 .checkbox-label__link {
   -webkit-text-decoration-line: underline;
