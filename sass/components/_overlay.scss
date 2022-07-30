@@ -18,6 +18,10 @@
         line-height: 1.55;
         letter-spacing: 0.03em;
         color: var(--title-text-color);
+
+        @media screen and (max-width: 479px) {
+            font-size: 15px;
+        }
     }
 }
 

@@ -90,7 +90,11 @@
     &__tel {
         font-size: 34px;
         line-height: 1.18;
-        color:var(--accent-text-color)
+        color:var(--accent-text-color);
+
+        @media screen and (max-width: 479px) {
+                font-size: 24px;
+            }
     }
 
     &__item:not(:last-child) {

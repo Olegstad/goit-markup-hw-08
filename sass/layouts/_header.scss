@@ -23,7 +23,6 @@
 
 .logo {
     display: block;
-    margin: 16px auto 16px 15px;
     font-family: var(--logo-font);
     font-weight: 700;
     font-size: 24px;
@@ -34,12 +33,7 @@
         color: var(--accent-text-color)
     }
 
-    @media screen and (min-width: 768px) {
-        margin: 26px auto 26px 0;
-    }
-
     @media screen and (min-width: 1200px) {
-        margin: 24px 92px 25px 0px;
         font-size: 26px;
         line-height: 1.19;
     }    
@@ -47,6 +41,15 @@
 
 .header-logo {
     color: var(--main-text-color);
+    margin: 16px auto 16px 15px;
+
+    @media screen and (min-width: 768px) {
+        margin: 26px auto 26px 0;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin: 24px 92px 25px 0px;
+    }
 }
 
 .header-list {
